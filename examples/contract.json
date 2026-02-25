@@ -1,0 +1,14 @@
+{
+  "dataset_name": "daily_customer_features",
+  "min_rows": 3,
+  "unique_key": ["customer_id", "event_date"],
+  "freshness": {"column": "event_date", "max_age_days": 3},
+  "columns": {
+    "customer_id": {"type": "str", "required": true, "null_ratio_max": 0.0},
+    "event_date": {"type": "date", "required": true, "null_ratio_max": 0.0},
+    "orders_30d": {"type": "int", "required": true, "null_ratio_max": 0.0},
+    "spend_90d": {"type": "float", "required": true, "null_ratio_max": 0.0},
+    "country": {"type": "str", "required": false, "null_ratio_max": 0.4},
+    "is_loyalty_member": {"type": "bool", "required": false, "null_ratio_max": 0.2}
+  }
+}

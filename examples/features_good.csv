@@ -1,0 +1,4 @@
+customer_id,event_date,orders_30d,spend_90d,country,is_loyalty_member
+1001,2026-02-24,4,251.20,CA,true
+1002,2026-02-25,1,75.10,US,false
+1003,2026-02-23,7,920.00,CA,true
